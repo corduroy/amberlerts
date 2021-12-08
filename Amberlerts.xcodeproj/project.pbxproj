@@ -1,0 +1,1575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03154FC02760C510009ABB6C /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03154FBF2760C510009ABB6C /* Network.swift */; };
+		03154FC12760C510009ABB6C /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03154FBF2760C510009ABB6C /* Network.swift */; };
+		03154FC32760C54B009ABB6C /* Prices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03154FC22760C54B009ABB6C /* Prices.swift */; };
+		03154FC42760C54B009ABB6C /* Prices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03154FC22760C54B009ABB6C /* Prices.swift */; };
+		03154FCB2760DAB2009ABB6C /* Amberlerts-watch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 03154FCA2760DAB2009ABB6C /* Amberlerts-watch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		03154FD02760DAB4009ABB6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03154FCF2760DAB4009ABB6C /* Assets.xcassets */; };
+		03154FD62760DAB4009ABB6C /* Amberlerts-watch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 03154FD52760DAB4009ABB6C /* Amberlerts-watch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		03154FDB2760DAB4009ABB6C /* AmberlertsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03154FDA2760DAB4009ABB6C /* AmberlertsApp.swift */; };
+		03154FDD2760DAB4009ABB6C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03154FDC2760DAB4009ABB6C /* ContentView.swift */; };
+		03154FDF2760DAB4009ABB6C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03154FDE2760DAB4009ABB6C /* NotificationController.swift */; };
+		03154FE12760DAB4009ABB6C /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03154FE02760DAB4009ABB6C /* NotificationView.swift */; };
+		03154FE32760DAB4009ABB6C /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03154FE22760DAB4009ABB6C /* ComplicationController.swift */; };
+		03154FE52760DAB4009ABB6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03154FE42760DAB4009ABB6C /* Assets.xcassets */; };
+		03154FE82760DAB4009ABB6C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03154FE72760DAB4009ABB6C /* Preview Assets.xcassets */; };
+		03154FF42760DAB4009ABB6C /* Amberlerts_watchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03154FF32760DAB4009ABB6C /* Amberlerts_watchTests.swift */; };
+		03154FFE2760DAB4009ABB6C /* Amberlerts_watchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03154FFD2760DAB4009ABB6C /* Amberlerts_watchUITests.swift */; };
+		031550002760DAB4009ABB6C /* Amberlerts_watchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03154FFF2760DAB4009ABB6C /* Amberlerts_watchUITestsLaunchTests.swift */; };
+		0315501A2760EA12009ABB6C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031550192760EA12009ABB6C /* WidgetKit.framework */; platformFilter = maccatalyst; };
+		0315501C2760EA12009ABB6C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0315501B2760EA12009ABB6C /* SwiftUI.framework */; platformFilter = maccatalyst; };
+		0315501F2760EA12009ABB6C /* AmberWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0315501E2760EA12009ABB6C /* AmberWidget.swift */; };
+		031550222760EA13009ABB6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 031550212760EA13009ABB6C /* Assets.xcassets */; };
+		031550242760EA13009ABB6C /* AmberWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 031550202760EA12009ABB6C /* AmberWidget.intentdefinition */; };
+		031550252760EA13009ABB6C /* AmberWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 031550202760EA12009ABB6C /* AmberWidget.intentdefinition */; };
+		031550282760EA13009ABB6C /* AmberWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 031550172760EA12009ABB6C /* AmberWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		03F69B75275A42DA0093E32F /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F69B74275A42DA0093E32F /* Tests_iOS.swift */; };
+		03F69B77275A42DA0093E32F /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F69B76275A42DA0093E32F /* Tests_iOSLaunchTests.swift */; };
+		03F69B81275A42DA0093E32F /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F69B80275A42DA0093E32F /* Tests_macOS.swift */; };
+		03F69B83275A42DA0093E32F /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F69B82275A42DA0093E32F /* Tests_macOSLaunchTests.swift */; };
+		03F69B84275A42DA0093E32F /* AmberlertsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F69B5C275A42D80093E32F /* AmberlertsApp.swift */; };
+		03F69B85275A42DA0093E32F /* AmberlertsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F69B5C275A42D80093E32F /* AmberlertsApp.swift */; };
+		03F69B86275A42DA0093E32F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F69B5D275A42D80093E32F /* ContentView.swift */; };
+		03F69B87275A42DA0093E32F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F69B5D275A42D80093E32F /* ContentView.swift */; };
+		03F69B88275A42DA0093E32F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F69B5E275A42DA0093E32F /* Assets.xcassets */; };
+		03F69B89275A42DA0093E32F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F69B5E275A42DA0093E32F /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03154FCC2760DAB2009ABB6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03F69B57275A42D80093E32F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03154FC92760DAB2009ABB6C;
+			remoteInfo = "Amberlerts-watch WatchKit App";
+		};
+		03154FD72760DAB4009ABB6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03F69B57275A42D80093E32F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03154FD42760DAB4009ABB6C;
+			remoteInfo = "Amberlerts-watch WatchKit Extension";
+		};
+		03154FF02760DAB4009ABB6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03F69B57275A42D80093E32F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03154FD42760DAB4009ABB6C;
+			remoteInfo = "Amberlerts-watch WatchKit Extension";
+		};
+		03154FFA2760DAB4009ABB6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03F69B57275A42D80093E32F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03154FC92760DAB2009ABB6C;
+			remoteInfo = "Amberlerts-watch WatchKit App";
+		};
+		031550262760EA13009ABB6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03F69B57275A42D80093E32F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 031550162760EA12009ABB6C;
+			remoteInfo = AmberWidgetExtension;
+		};
+		03F69B71275A42DA0093E32F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03F69B57275A42D80093E32F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03F69B62275A42DA0093E32F;
+			remoteInfo = "Amberlerts (iOS)";
+		};
+		03F69B7D275A42DA0093E32F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03F69B57275A42D80093E32F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03F69B68275A42DA0093E32F;
+			remoteInfo = "Amberlerts (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		031550042760DAB4009ABB6C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				03154FD62760DAB4009ABB6C /* Amberlerts-watch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031550082760DAB4009ABB6C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				03154FCB2760DAB2009ABB6C /* Amberlerts-watch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0315502C2760EA13009ABB6C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				031550282760EA13009ABB6C /* AmberWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		03154FBF2760C510009ABB6C /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		03154FC22760C54B009ABB6C /* Prices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prices.swift; sourceTree = "<group>"; };
+		03154FC72760DAB2009ABB6C /* Amberlerts-watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amberlerts-watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03154FCA2760DAB2009ABB6C /* Amberlerts-watch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amberlerts-watch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03154FCF2760DAB4009ABB6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03154FD52760DAB4009ABB6C /* Amberlerts-watch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Amberlerts-watch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03154FDA2760DAB4009ABB6C /* AmberlertsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmberlertsApp.swift; sourceTree = "<group>"; };
+		03154FDC2760DAB4009ABB6C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		03154FDE2760DAB4009ABB6C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		03154FE02760DAB4009ABB6C /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		03154FE22760DAB4009ABB6C /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		03154FE42760DAB4009ABB6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03154FE72760DAB4009ABB6C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		03154FE92760DAB4009ABB6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03154FEA2760DAB4009ABB6C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		03154FEF2760DAB4009ABB6C /* Amberlerts-watchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Amberlerts-watchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03154FF32760DAB4009ABB6C /* Amberlerts_watchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amberlerts_watchTests.swift; sourceTree = "<group>"; };
+		03154FF92760DAB4009ABB6C /* Amberlerts-watchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Amberlerts-watchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03154FFD2760DAB4009ABB6C /* Amberlerts_watchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amberlerts_watchUITests.swift; sourceTree = "<group>"; };
+		03154FFF2760DAB4009ABB6C /* Amberlerts_watchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amberlerts_watchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		031550122760DB77009ABB6C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		031550172760EA12009ABB6C /* AmberWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AmberWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		031550192760EA12009ABB6C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		0315501B2760EA12009ABB6C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		0315501E2760EA12009ABB6C /* AmberWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmberWidget.swift; sourceTree = "<group>"; };
+		031550202760EA12009ABB6C /* AmberWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = AmberWidget.intentdefinition; sourceTree = "<group>"; };
+		031550212760EA13009ABB6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		031550232760EA13009ABB6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03F69B5C275A42D80093E32F /* AmberlertsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmberlertsApp.swift; sourceTree = "<group>"; };
+		03F69B5D275A42D80093E32F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		03F69B5E275A42DA0093E32F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03F69B63275A42DA0093E32F /* Amberlerts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Amberlerts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03F69B69275A42DA0093E32F /* Amberlerts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Amberlerts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03F69B6B275A42DA0093E32F /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		03F69B70275A42DA0093E32F /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03F69B74275A42DA0093E32F /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		03F69B76275A42DA0093E32F /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		03F69B7C275A42DA0093E32F /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03F69B80275A42DA0093E32F /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		03F69B82275A42DA0093E32F /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03154FD22760DAB4009ABB6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03154FEC2760DAB4009ABB6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03154FF62760DAB4009ABB6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031550142760EA12009ABB6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0315501C2760EA12009ABB6C /* SwiftUI.framework in Frameworks */,
+				0315501A2760EA12009ABB6C /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F69B60275A42DA0093E32F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F69B66275A42DA0093E32F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F69B6D275A42DA0093E32F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F69B79275A42DA0093E32F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03154FCE2760DAB2009ABB6C /* Amberlerts-watch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				03154FCF2760DAB4009ABB6C /* Assets.xcassets */,
+				031550122760DB77009ABB6C /* ContentView.swift */,
+			);
+			path = "Amberlerts-watch WatchKit App";
+			sourceTree = "<group>";
+		};
+		03154FD92760DAB4009ABB6C /* Amberlerts-watch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				03154FDA2760DAB4009ABB6C /* AmberlertsApp.swift */,
+				03154FDC2760DAB4009ABB6C /* ContentView.swift */,
+				03154FDE2760DAB4009ABB6C /* NotificationController.swift */,
+				03154FE02760DAB4009ABB6C /* NotificationView.swift */,
+				03154FE22760DAB4009ABB6C /* ComplicationController.swift */,
+				03154FE42760DAB4009ABB6C /* Assets.xcassets */,
+				03154FE92760DAB4009ABB6C /* Info.plist */,
+				03154FEA2760DAB4009ABB6C /* PushNotificationPayload.apns */,
+				03154FE62760DAB4009ABB6C /* Preview Content */,
+			);
+			path = "Amberlerts-watch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		03154FE62760DAB4009ABB6C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				03154FE72760DAB4009ABB6C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		03154FF22760DAB4009ABB6C /* Amberlerts-watchTests */ = {
+			isa = PBXGroup;
+			children = (
+				03154FF32760DAB4009ABB6C /* Amberlerts_watchTests.swift */,
+			);
+			path = "Amberlerts-watchTests";
+			sourceTree = "<group>";
+		};
+		03154FFC2760DAB4009ABB6C /* Amberlerts-watchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				03154FFD2760DAB4009ABB6C /* Amberlerts_watchUITests.swift */,
+				03154FFF2760DAB4009ABB6C /* Amberlerts_watchUITestsLaunchTests.swift */,
+			);
+			path = "Amberlerts-watchUITests";
+			sourceTree = "<group>";
+		};
+		031550182760EA12009ABB6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				031550192760EA12009ABB6C /* WidgetKit.framework */,
+				0315501B2760EA12009ABB6C /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0315501D2760EA12009ABB6C /* AmberWidget */ = {
+			isa = PBXGroup;
+			children = (
+				0315501E2760EA12009ABB6C /* AmberWidget.swift */,
+				031550202760EA12009ABB6C /* AmberWidget.intentdefinition */,
+				031550212760EA13009ABB6C /* Assets.xcassets */,
+				031550232760EA13009ABB6C /* Info.plist */,
+			);
+			path = AmberWidget;
+			sourceTree = "<group>";
+		};
+		03F69B56275A42D80093E32F = {
+			isa = PBXGroup;
+			children = (
+				03F69B5B275A42D80093E32F /* Shared */,
+				03F69B6A275A42DA0093E32F /* macOS */,
+				03F69B73275A42DA0093E32F /* Tests iOS */,
+				03F69B7F275A42DA0093E32F /* Tests macOS */,
+				03154FCE2760DAB2009ABB6C /* Amberlerts-watch WatchKit App */,
+				03154FD92760DAB4009ABB6C /* Amberlerts-watch WatchKit Extension */,
+				03154FF22760DAB4009ABB6C /* Amberlerts-watchTests */,
+				03154FFC2760DAB4009ABB6C /* Amberlerts-watchUITests */,
+				0315501D2760EA12009ABB6C /* AmberWidget */,
+				031550182760EA12009ABB6C /* Frameworks */,
+				03F69B64275A42DA0093E32F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03F69B5B275A42D80093E32F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				03F69B5C275A42D80093E32F /* AmberlertsApp.swift */,
+				03F69B5D275A42D80093E32F /* ContentView.swift */,
+				03154FBF2760C510009ABB6C /* Network.swift */,
+				03154FC22760C54B009ABB6C /* Prices.swift */,
+				03F69B5E275A42DA0093E32F /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		03F69B64275A42DA0093E32F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03F69B63275A42DA0093E32F /* Amberlerts.app */,
+				03F69B69275A42DA0093E32F /* Amberlerts.app */,
+				03F69B70275A42DA0093E32F /* Tests iOS.xctest */,
+				03F69B7C275A42DA0093E32F /* Tests macOS.xctest */,
+				03154FC72760DAB2009ABB6C /* Amberlerts-watch.app */,
+				03154FCA2760DAB2009ABB6C /* Amberlerts-watch WatchKit App.app */,
+				03154FD52760DAB4009ABB6C /* Amberlerts-watch WatchKit Extension.appex */,
+				03154FEF2760DAB4009ABB6C /* Amberlerts-watchTests.xctest */,
+				03154FF92760DAB4009ABB6C /* Amberlerts-watchUITests.xctest */,
+				031550172760EA12009ABB6C /* AmberWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03F69B6A275A42DA0093E32F /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				03F69B6B275A42DA0093E32F /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		03F69B73275A42DA0093E32F /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				03F69B74275A42DA0093E32F /* Tests_iOS.swift */,
+				03F69B76275A42DA0093E32F /* Tests_iOSLaunchTests.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		03F69B7F275A42DA0093E32F /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				03F69B80275A42DA0093E32F /* Tests_macOS.swift */,
+				03F69B82275A42DA0093E32F /* Tests_macOSLaunchTests.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03154FC62760DAB2009ABB6C /* Amberlerts-watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 031550092760DAB4009ABB6C /* Build configuration list for PBXNativeTarget "Amberlerts-watch" */;
+			buildPhases = (
+				03154FC52760DAB2009ABB6C /* Resources */,
+				031550082760DAB4009ABB6C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03154FCD2760DAB2009ABB6C /* PBXTargetDependency */,
+			);
+			name = "Amberlerts-watch";
+			productName = "Amberlerts-watch";
+			productReference = 03154FC72760DAB2009ABB6C /* Amberlerts-watch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		03154FC92760DAB2009ABB6C /* Amberlerts-watch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 031550052760DAB4009ABB6C /* Build configuration list for PBXNativeTarget "Amberlerts-watch WatchKit App" */;
+			buildPhases = (
+				03154FC82760DAB2009ABB6C /* Resources */,
+				031550042760DAB4009ABB6C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03154FD82760DAB4009ABB6C /* PBXTargetDependency */,
+			);
+			name = "Amberlerts-watch WatchKit App";
+			productName = "Amberlerts-watch WatchKit App";
+			productReference = 03154FCA2760DAB2009ABB6C /* Amberlerts-watch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		03154FD42760DAB4009ABB6C /* Amberlerts-watch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 031550012760DAB4009ABB6C /* Build configuration list for PBXNativeTarget "Amberlerts-watch WatchKit Extension" */;
+			buildPhases = (
+				03154FD12760DAB4009ABB6C /* Sources */,
+				03154FD22760DAB4009ABB6C /* Frameworks */,
+				03154FD32760DAB4009ABB6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Amberlerts-watch WatchKit Extension";
+			productName = "Amberlerts-watch WatchKit Extension";
+			productReference = 03154FD52760DAB4009ABB6C /* Amberlerts-watch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		03154FEE2760DAB4009ABB6C /* Amberlerts-watchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0315500C2760DAB4009ABB6C /* Build configuration list for PBXNativeTarget "Amberlerts-watchTests" */;
+			buildPhases = (
+				03154FEB2760DAB4009ABB6C /* Sources */,
+				03154FEC2760DAB4009ABB6C /* Frameworks */,
+				03154FED2760DAB4009ABB6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03154FF12760DAB4009ABB6C /* PBXTargetDependency */,
+			);
+			name = "Amberlerts-watchTests";
+			productName = "Amberlerts-watchTests";
+			productReference = 03154FEF2760DAB4009ABB6C /* Amberlerts-watchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		03154FF82760DAB4009ABB6C /* Amberlerts-watchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0315500F2760DAB4009ABB6C /* Build configuration list for PBXNativeTarget "Amberlerts-watchUITests" */;
+			buildPhases = (
+				03154FF52760DAB4009ABB6C /* Sources */,
+				03154FF62760DAB4009ABB6C /* Frameworks */,
+				03154FF72760DAB4009ABB6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03154FFB2760DAB4009ABB6C /* PBXTargetDependency */,
+			);
+			name = "Amberlerts-watchUITests";
+			productName = "Amberlerts-watchUITests";
+			productReference = 03154FF92760DAB4009ABB6C /* Amberlerts-watchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		031550162760EA12009ABB6C /* AmberWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 031550292760EA13009ABB6C /* Build configuration list for PBXNativeTarget "AmberWidgetExtension" */;
+			buildPhases = (
+				031550132760EA12009ABB6C /* Sources */,
+				031550142760EA12009ABB6C /* Frameworks */,
+				031550152760EA12009ABB6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmberWidgetExtension;
+			productName = AmberWidgetExtension;
+			productReference = 031550172760EA12009ABB6C /* AmberWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		03F69B62275A42DA0093E32F /* Amberlerts (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03F69B8C275A42DA0093E32F /* Build configuration list for PBXNativeTarget "Amberlerts (iOS)" */;
+			buildPhases = (
+				03F69B5F275A42DA0093E32F /* Sources */,
+				03F69B60275A42DA0093E32F /* Frameworks */,
+				03F69B61275A42DA0093E32F /* Resources */,
+				0315502C2760EA13009ABB6C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				031550272760EA13009ABB6C /* PBXTargetDependency */,
+			);
+			name = "Amberlerts (iOS)";
+			productName = "Amberlerts (iOS)";
+			productReference = 03F69B63275A42DA0093E32F /* Amberlerts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03F69B68275A42DA0093E32F /* Amberlerts (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03F69B8F275A42DA0093E32F /* Build configuration list for PBXNativeTarget "Amberlerts (macOS)" */;
+			buildPhases = (
+				03F69B65275A42DA0093E32F /* Sources */,
+				03F69B66275A42DA0093E32F /* Frameworks */,
+				03F69B67275A42DA0093E32F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Amberlerts (macOS)";
+			productName = "Amberlerts (macOS)";
+			productReference = 03F69B69275A42DA0093E32F /* Amberlerts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03F69B6F275A42DA0093E32F /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03F69B92275A42DA0093E32F /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				03F69B6C275A42DA0093E32F /* Sources */,
+				03F69B6D275A42DA0093E32F /* Frameworks */,
+				03F69B6E275A42DA0093E32F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03F69B72275A42DA0093E32F /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = 03F69B70275A42DA0093E32F /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		03F69B7B275A42DA0093E32F /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03F69B95275A42DA0093E32F /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				03F69B78275A42DA0093E32F /* Sources */,
+				03F69B79275A42DA0093E32F /* Frameworks */,
+				03F69B7A275A42DA0093E32F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03F69B7E275A42DA0093E32F /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = 03F69B7C275A42DA0093E32F /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03F69B57275A42D80093E32F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					03154FC62760DAB2009ABB6C = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					03154FC92760DAB2009ABB6C = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					03154FD42760DAB4009ABB6C = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					03154FEE2760DAB4009ABB6C = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 03154FD42760DAB4009ABB6C;
+					};
+					03154FF82760DAB4009ABB6C = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 03154FC92760DAB2009ABB6C;
+					};
+					031550162760EA12009ABB6C = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					03F69B62275A42DA0093E32F = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					03F69B68275A42DA0093E32F = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					03F69B6F275A42DA0093E32F = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 03F69B62275A42DA0093E32F;
+					};
+					03F69B7B275A42DA0093E32F = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 03F69B68275A42DA0093E32F;
+					};
+				};
+			};
+			buildConfigurationList = 03F69B5A275A42D80093E32F /* Build configuration list for PBXProject "Amberlerts" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03F69B56275A42D80093E32F;
+			productRefGroup = 03F69B64275A42DA0093E32F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03F69B62275A42DA0093E32F /* Amberlerts (iOS) */,
+				03F69B68275A42DA0093E32F /* Amberlerts (macOS) */,
+				03F69B6F275A42DA0093E32F /* Tests iOS */,
+				03F69B7B275A42DA0093E32F /* Tests macOS */,
+				03154FC62760DAB2009ABB6C /* Amberlerts-watch */,
+				03154FC92760DAB2009ABB6C /* Amberlerts-watch WatchKit App */,
+				03154FD42760DAB4009ABB6C /* Amberlerts-watch WatchKit Extension */,
+				03154FEE2760DAB4009ABB6C /* Amberlerts-watchTests */,
+				03154FF82760DAB4009ABB6C /* Amberlerts-watchUITests */,
+				031550162760EA12009ABB6C /* AmberWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03154FC52760DAB2009ABB6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03154FC82760DAB2009ABB6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03154FD02760DAB4009ABB6C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03154FD32760DAB4009ABB6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03154FE82760DAB4009ABB6C /* Preview Assets.xcassets in Resources */,
+				03154FE52760DAB4009ABB6C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03154FED2760DAB4009ABB6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03154FF72760DAB4009ABB6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031550152760EA12009ABB6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				031550222760EA13009ABB6C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F69B61275A42DA0093E32F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03F69B88275A42DA0093E32F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F69B67275A42DA0093E32F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03F69B89275A42DA0093E32F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F69B6E275A42DA0093E32F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F69B7A275A42DA0093E32F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03154FD12760DAB4009ABB6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03154FDF2760DAB4009ABB6C /* NotificationController.swift in Sources */,
+				03154FDD2760DAB4009ABB6C /* ContentView.swift in Sources */,
+				03154FE32760DAB4009ABB6C /* ComplicationController.swift in Sources */,
+				03154FDB2760DAB4009ABB6C /* AmberlertsApp.swift in Sources */,
+				03154FE12760DAB4009ABB6C /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03154FEB2760DAB4009ABB6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03154FF42760DAB4009ABB6C /* Amberlerts_watchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03154FF52760DAB4009ABB6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03154FFE2760DAB4009ABB6C /* Amberlerts_watchUITests.swift in Sources */,
+				031550002760DAB4009ABB6C /* Amberlerts_watchUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031550132760EA12009ABB6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				031550242760EA13009ABB6C /* AmberWidget.intentdefinition in Sources */,
+				0315501F2760EA12009ABB6C /* AmberWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F69B5F275A42DA0093E32F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03F69B86275A42DA0093E32F /* ContentView.swift in Sources */,
+				03154FC32760C54B009ABB6C /* Prices.swift in Sources */,
+				03F69B84275A42DA0093E32F /* AmberlertsApp.swift in Sources */,
+				031550252760EA13009ABB6C /* AmberWidget.intentdefinition in Sources */,
+				03154FC02760C510009ABB6C /* Network.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F69B65275A42DA0093E32F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03F69B87275A42DA0093E32F /* ContentView.swift in Sources */,
+				03154FC42760C54B009ABB6C /* Prices.swift in Sources */,
+				03F69B85275A42DA0093E32F /* AmberlertsApp.swift in Sources */,
+				03154FC12760C510009ABB6C /* Network.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F69B6C275A42DA0093E32F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03F69B77275A42DA0093E32F /* Tests_iOSLaunchTests.swift in Sources */,
+				03F69B75275A42DA0093E32F /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F69B78275A42DA0093E32F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03F69B83275A42DA0093E32F /* Tests_macOSLaunchTests.swift in Sources */,
+				03F69B81275A42DA0093E32F /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03154FCD2760DAB2009ABB6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03154FC92760DAB2009ABB6C /* Amberlerts-watch WatchKit App */;
+			targetProxy = 03154FCC2760DAB2009ABB6C /* PBXContainerItemProxy */;
+		};
+		03154FD82760DAB4009ABB6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03154FD42760DAB4009ABB6C /* Amberlerts-watch WatchKit Extension */;
+			targetProxy = 03154FD72760DAB4009ABB6C /* PBXContainerItemProxy */;
+		};
+		03154FF12760DAB4009ABB6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03154FD42760DAB4009ABB6C /* Amberlerts-watch WatchKit Extension */;
+			targetProxy = 03154FF02760DAB4009ABB6C /* PBXContainerItemProxy */;
+		};
+		03154FFB2760DAB4009ABB6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03154FC92760DAB2009ABB6C /* Amberlerts-watch WatchKit App */;
+			targetProxy = 03154FFA2760DAB4009ABB6C /* PBXContainerItemProxy */;
+		};
+		031550272760EA13009ABB6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 031550162760EA12009ABB6C /* AmberWidgetExtension */;
+			targetProxy = 031550262760EA13009ABB6C /* PBXContainerItemProxy */;
+		};
+		03F69B72275A42DA0093E32F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03F69B62275A42DA0093E32F /* Amberlerts (iOS) */;
+			targetProxy = 03F69B71275A42DA0093E32F /* PBXContainerItemProxy */;
+		};
+		03F69B7E275A42DA0093E32F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03F69B68275A42DA0093E32F /* Amberlerts (macOS) */;
+			targetProxy = 03F69B7D275A42DA0093E32F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		031550022760DAB4009ABB6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Amberlerts-watch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 9V5S3WLJQR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Amberlerts-watch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Amberlerts-watch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "biz.corduroy.Amberlerts-watch.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		031550032760DAB4009ABB6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Amberlerts-watch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 9V5S3WLJQR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Amberlerts-watch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Amberlerts-watch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "biz.corduroy.Amberlerts-watch.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		031550062760DAB4009ABB6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9V5S3WLJQR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Amberlerts_watch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Amberlerts-watch WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "biz.corduroy.Amberlerts-watch.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		031550072760DAB4009ABB6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9V5S3WLJQR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Amberlerts_watch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Amberlerts-watch WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "biz.corduroy.Amberlerts-watch.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		0315500A2760DAB4009ABB6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9V5S3WLJQR;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "biz.corduroy.Amberlerts-watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0315500B2760DAB4009ABB6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9V5S3WLJQR;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "biz.corduroy.Amberlerts-watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0315500D2760DAB4009ABB6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9V5S3WLJQR;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "biz.corduroy.Amberlerts-watchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Amberlerts-watch WatchKit Extension.appex/Amberlerts-watch WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		0315500E2760DAB4009ABB6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9V5S3WLJQR;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "biz.corduroy.Amberlerts-watchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Amberlerts-watch WatchKit Extension.appex/Amberlerts-watch WatchKit Extension";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		031550102760DAB4009ABB6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9V5S3WLJQR;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "biz.corduroy.Amberlerts-watchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Amberlerts-watch WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		031550112760DAB4009ABB6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9V5S3WLJQR;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "biz.corduroy.Amberlerts-watchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Amberlerts-watch WatchKit App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		0315502A2760EA13009ABB6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9V5S3WLJQR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AmberWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AmberWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = biz.corduroy.Amberlerts.AmberWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0315502B2760EA13009ABB6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9V5S3WLJQR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AmberWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AmberWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = biz.corduroy.Amberlerts.AmberWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03F69B8A275A42DA0093E32F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		03F69B8B275A42DA0093E32F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		03F69B8D275A42DA0093E32F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9V5S3WLJQR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = biz.corduroy.Amberlerts;
+				PRODUCT_NAME = Amberlerts;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03F69B8E275A42DA0093E32F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9V5S3WLJQR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = biz.corduroy.Amberlerts;
+				PRODUCT_NAME = Amberlerts;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03F69B90275A42DA0093E32F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9V5S3WLJQR;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = biz.corduroy.Amberlerts;
+				PRODUCT_NAME = Amberlerts;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		03F69B91275A42DA0093E32F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9V5S3WLJQR;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = biz.corduroy.Amberlerts;
+				PRODUCT_NAME = Amberlerts;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		03F69B93275A42DA0093E32F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9V5S3WLJQR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "biz.corduroy.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Amberlerts (iOS)";
+			};
+			name = Debug;
+		};
+		03F69B94275A42DA0093E32F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9V5S3WLJQR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "biz.corduroy.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Amberlerts (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03F69B96275A42DA0093E32F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9V5S3WLJQR;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "biz.corduroy.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Amberlerts (macOS)";
+			};
+			name = Debug;
+		};
+		03F69B97275A42DA0093E32F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9V5S3WLJQR;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "biz.corduroy.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Amberlerts (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		031550012760DAB4009ABB6C /* Build configuration list for PBXNativeTarget "Amberlerts-watch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				031550022760DAB4009ABB6C /* Debug */,
+				031550032760DAB4009ABB6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		031550052760DAB4009ABB6C /* Build configuration list for PBXNativeTarget "Amberlerts-watch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				031550062760DAB4009ABB6C /* Debug */,
+				031550072760DAB4009ABB6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		031550092760DAB4009ABB6C /* Build configuration list for PBXNativeTarget "Amberlerts-watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0315500A2760DAB4009ABB6C /* Debug */,
+				0315500B2760DAB4009ABB6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0315500C2760DAB4009ABB6C /* Build configuration list for PBXNativeTarget "Amberlerts-watchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0315500D2760DAB4009ABB6C /* Debug */,
+				0315500E2760DAB4009ABB6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0315500F2760DAB4009ABB6C /* Build configuration list for PBXNativeTarget "Amberlerts-watchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				031550102760DAB4009ABB6C /* Debug */,
+				031550112760DAB4009ABB6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		031550292760EA13009ABB6C /* Build configuration list for PBXNativeTarget "AmberWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0315502A2760EA13009ABB6C /* Debug */,
+				0315502B2760EA13009ABB6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03F69B5A275A42D80093E32F /* Build configuration list for PBXProject "Amberlerts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03F69B8A275A42DA0093E32F /* Debug */,
+				03F69B8B275A42DA0093E32F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03F69B8C275A42DA0093E32F /* Build configuration list for PBXNativeTarget "Amberlerts (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03F69B8D275A42DA0093E32F /* Debug */,
+				03F69B8E275A42DA0093E32F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03F69B8F275A42DA0093E32F /* Build configuration list for PBXNativeTarget "Amberlerts (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03F69B90275A42DA0093E32F /* Debug */,
+				03F69B91275A42DA0093E32F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03F69B92275A42DA0093E32F /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03F69B93275A42DA0093E32F /* Debug */,
+				03F69B94275A42DA0093E32F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03F69B95275A42DA0093E32F /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03F69B96275A42DA0093E32F /* Debug */,
+				03F69B97275A42DA0093E32F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03F69B57275A42D80093E32F /* Project object */;
+}
