@@ -9,7 +9,6 @@ import Foundation
 
 struct Price:  Identifiable,Decodable {
     let id = UUID()
-//    var id:             Int
     var type:           String
     var date:           String
     var duration:       Int
@@ -18,4 +17,18 @@ struct Price:  Identifiable,Decodable {
     var perKwh:         Double
     var channelType:    String
     var renewables:     Double
+	var spotPerKwh:		Double
+	var spikeStatus:	String
+}
+
+struct Site: Identifiable,Decodable {
+    var id:     String
+    var nmi:    Int64
+	var channels:	[Channel]
+}
+
+struct Channel:	Identifiable,Decodable {
+	let id = UUID()
+	var identifier:	String
+	var type:		String
 }
