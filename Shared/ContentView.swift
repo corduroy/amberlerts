@@ -39,6 +39,7 @@ struct ContentView: View {
 							HStack(alignment:.top) {
 								Text(price.startTime, style: .time)
 									.foregroundColor(textColorForDate(date: price.startTime))
+									.bold()
 								VStack(alignment: .leading) {
 									Text(currencyFormatter.string(for: price.perKwh)!)
 										.bold()
@@ -46,9 +47,7 @@ struct ContentView: View {
 									Text("Renewables: ")
 										.foregroundColor(textColorForDate(date: price.startTime))
 									+ Text(percentFormatter.string(from: NSNumber(value: price.renewables/100))!)
-										.bold()
 										.foregroundColor(textColorForDate(date: price.startTime))
-									
 								}
 							}
 						}

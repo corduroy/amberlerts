@@ -12,24 +12,9 @@
 		03154FC32760C54B009ABB6C /* Prices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03154FC22760C54B009ABB6C /* Prices.swift */; };
 		03154FC42760C54B009ABB6C /* Prices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03154FC22760C54B009ABB6C /* Prices.swift */; };
 		03154FCB2760DAB2009ABB6C /* Amberlerts-watch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 03154FCA2760DAB2009ABB6C /* Amberlerts-watch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		03154FD02760DAB4009ABB6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03154FCF2760DAB4009ABB6C /* Assets.xcassets */; };
 		03154FD62760DAB4009ABB6C /* Amberlerts-watch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 03154FD52760DAB4009ABB6C /* Amberlerts-watch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		03154FDB2760DAB4009ABB6C /* AmberlertsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03154FDA2760DAB4009ABB6C /* AmberlertsApp.swift */; };
-		03154FDD2760DAB4009ABB6C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03154FDC2760DAB4009ABB6C /* ContentView.swift */; };
-		03154FDF2760DAB4009ABB6C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03154FDE2760DAB4009ABB6C /* NotificationController.swift */; };
-		03154FE12760DAB4009ABB6C /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03154FE02760DAB4009ABB6C /* NotificationView.swift */; };
-		03154FE32760DAB4009ABB6C /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03154FE22760DAB4009ABB6C /* ComplicationController.swift */; };
-		03154FE52760DAB4009ABB6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03154FE42760DAB4009ABB6C /* Assets.xcassets */; };
-		03154FE82760DAB4009ABB6C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03154FE72760DAB4009ABB6C /* Preview Assets.xcassets */; };
-		03154FF42760DAB4009ABB6C /* Amberlerts_watchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03154FF32760DAB4009ABB6C /* Amberlerts_watchTests.swift */; };
-		03154FFE2760DAB4009ABB6C /* Amberlerts_watchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03154FFD2760DAB4009ABB6C /* Amberlerts_watchUITests.swift */; };
-		031550002760DAB4009ABB6C /* Amberlerts_watchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03154FFF2760DAB4009ABB6C /* Amberlerts_watchUITestsLaunchTests.swift */; };
 		0315501A2760EA12009ABB6C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031550192760EA12009ABB6C /* WidgetKit.framework */; platformFilter = maccatalyst; };
 		0315501C2760EA12009ABB6C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0315501B2760EA12009ABB6C /* SwiftUI.framework */; platformFilter = maccatalyst; };
-		0315501F2760EA12009ABB6C /* AmberWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0315501E2760EA12009ABB6C /* AmberWidget.swift */; };
-		031550222760EA13009ABB6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 031550212760EA13009ABB6C /* Assets.xcassets */; };
-		031550242760EA13009ABB6C /* AmberWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 031550202760EA12009ABB6C /* AmberWidget.intentdefinition */; };
-		031550252760EA13009ABB6C /* AmberWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 031550202760EA12009ABB6C /* AmberWidget.intentdefinition */; };
 		031550282760EA13009ABB6C /* AmberWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 031550172760EA12009ABB6C /* AmberWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		03F69B75275A42DA0093E32F /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F69B74275A42DA0093E32F /* Tests_iOS.swift */; };
 		03F69B77275A42DA0093E32F /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F69B76275A42DA0093E32F /* Tests_iOSLaunchTests.swift */; };
@@ -136,36 +121,17 @@
 		03154FC22760C54B009ABB6C /* Prices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prices.swift; sourceTree = "<group>"; };
 		03154FC72760DAB2009ABB6C /* Amberlerts-watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amberlerts-watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03154FCA2760DAB2009ABB6C /* Amberlerts-watch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amberlerts-watch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		03154FCF2760DAB4009ABB6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03154FD52760DAB4009ABB6C /* Amberlerts-watch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Amberlerts-watch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		03154FDA2760DAB4009ABB6C /* AmberlertsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmberlertsApp.swift; sourceTree = "<group>"; };
-		03154FDC2760DAB4009ABB6C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		03154FDE2760DAB4009ABB6C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		03154FE02760DAB4009ABB6C /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
-		03154FE22760DAB4009ABB6C /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
-		03154FE42760DAB4009ABB6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		03154FE72760DAB4009ABB6C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		03154FE92760DAB4009ABB6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		03154FEA2760DAB4009ABB6C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		03154FEF2760DAB4009ABB6C /* Amberlerts-watchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Amberlerts-watchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		03154FF32760DAB4009ABB6C /* Amberlerts_watchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amberlerts_watchTests.swift; sourceTree = "<group>"; };
 		03154FF92760DAB4009ABB6C /* Amberlerts-watchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Amberlerts-watchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		03154FFD2760DAB4009ABB6C /* Amberlerts_watchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amberlerts_watchUITests.swift; sourceTree = "<group>"; };
-		03154FFF2760DAB4009ABB6C /* Amberlerts_watchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amberlerts_watchUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		031550122760DB77009ABB6C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		031550172760EA12009ABB6C /* AmberWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AmberWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		031550192760EA12009ABB6C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		0315501B2760EA12009ABB6C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		0315501E2760EA12009ABB6C /* AmberWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmberWidget.swift; sourceTree = "<group>"; };
-		031550202760EA12009ABB6C /* AmberWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = AmberWidget.intentdefinition; sourceTree = "<group>"; };
-		031550212760EA13009ABB6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		031550232760EA13009ABB6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03F69B5C275A42D80093E32F /* AmberlertsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmberlertsApp.swift; sourceTree = "<group>"; };
 		03F69B5D275A42D80093E32F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		03F69B5E275A42DA0093E32F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03F69B63275A42DA0093E32F /* Amberlerts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Amberlerts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F69B69275A42DA0093E32F /* Amberlerts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Amberlerts.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		03F69B6B275A42DA0093E32F /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		03F69B70275A42DA0093E32F /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F69B74275A42DA0093E32F /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		03F69B76275A42DA0093E32F /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
@@ -236,56 +202,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03154FCE2760DAB2009ABB6C /* Amberlerts-watch WatchKit App */ = {
-			isa = PBXGroup;
-			children = (
-				03154FCF2760DAB4009ABB6C /* Assets.xcassets */,
-				031550122760DB77009ABB6C /* ContentView.swift */,
-			);
-			path = "Amberlerts-watch WatchKit App";
-			sourceTree = "<group>";
-		};
-		03154FD92760DAB4009ABB6C /* Amberlerts-watch WatchKit Extension */ = {
-			isa = PBXGroup;
-			children = (
-				03154FDA2760DAB4009ABB6C /* AmberlertsApp.swift */,
-				03154FDC2760DAB4009ABB6C /* ContentView.swift */,
-				03154FDE2760DAB4009ABB6C /* NotificationController.swift */,
-				03154FE02760DAB4009ABB6C /* NotificationView.swift */,
-				03154FE22760DAB4009ABB6C /* ComplicationController.swift */,
-				03154FE42760DAB4009ABB6C /* Assets.xcassets */,
-				03154FE92760DAB4009ABB6C /* Info.plist */,
-				03154FEA2760DAB4009ABB6C /* PushNotificationPayload.apns */,
-				03154FE62760DAB4009ABB6C /* Preview Content */,
-			);
-			path = "Amberlerts-watch WatchKit Extension";
-			sourceTree = "<group>";
-		};
-		03154FE62760DAB4009ABB6C /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				03154FE72760DAB4009ABB6C /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		03154FF22760DAB4009ABB6C /* Amberlerts-watchTests */ = {
-			isa = PBXGroup;
-			children = (
-				03154FF32760DAB4009ABB6C /* Amberlerts_watchTests.swift */,
-			);
-			path = "Amberlerts-watchTests";
-			sourceTree = "<group>";
-		};
-		03154FFC2760DAB4009ABB6C /* Amberlerts-watchUITests */ = {
-			isa = PBXGroup;
-			children = (
-				03154FFD2760DAB4009ABB6C /* Amberlerts_watchUITests.swift */,
-				03154FFF2760DAB4009ABB6C /* Amberlerts_watchUITestsLaunchTests.swift */,
-			);
-			path = "Amberlerts-watchUITests";
-			sourceTree = "<group>";
-		};
 		031550182760EA12009ABB6C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -295,29 +211,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0315501D2760EA12009ABB6C /* AmberWidget */ = {
-			isa = PBXGroup;
-			children = (
-				0315501E2760EA12009ABB6C /* AmberWidget.swift */,
-				031550202760EA12009ABB6C /* AmberWidget.intentdefinition */,
-				031550212760EA13009ABB6C /* Assets.xcassets */,
-				031550232760EA13009ABB6C /* Info.plist */,
-			);
-			path = AmberWidget;
-			sourceTree = "<group>";
-		};
 		03F69B56275A42D80093E32F = {
 			isa = PBXGroup;
 			children = (
 				03F69B5B275A42D80093E32F /* Shared */,
-				03F69B6A275A42DA0093E32F /* macOS */,
 				03F69B73275A42DA0093E32F /* Tests iOS */,
 				03F69B7F275A42DA0093E32F /* Tests macOS */,
-				03154FCE2760DAB2009ABB6C /* Amberlerts-watch WatchKit App */,
-				03154FD92760DAB4009ABB6C /* Amberlerts-watch WatchKit Extension */,
-				03154FF22760DAB4009ABB6C /* Amberlerts-watchTests */,
-				03154FFC2760DAB4009ABB6C /* Amberlerts-watchUITests */,
-				0315501D2760EA12009ABB6C /* AmberWidget */,
 				031550182760EA12009ABB6C /* Frameworks */,
 				03F69B64275A42DA0093E32F /* Products */,
 			);
@@ -350,14 +249,6 @@
 				031550172760EA12009ABB6C /* AmberWidgetExtension.appex */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		03F69B6A275A42DA0093E32F /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				03F69B6B275A42DA0093E32F /* macOS.entitlements */,
-			);
-			path = macOS;
 			sourceTree = "<group>";
 		};
 		03F69B73275A42DA0093E32F /* Tests iOS */ = {
@@ -642,7 +533,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03154FD02760DAB4009ABB6C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,8 +540,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03154FE82760DAB4009ABB6C /* Preview Assets.xcassets in Resources */,
-				03154FE52760DAB4009ABB6C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -673,7 +561,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				031550222760EA13009ABB6C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -714,11 +601,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03154FDF2760DAB4009ABB6C /* NotificationController.swift in Sources */,
-				03154FDD2760DAB4009ABB6C /* ContentView.swift in Sources */,
-				03154FE32760DAB4009ABB6C /* ComplicationController.swift in Sources */,
-				03154FDB2760DAB4009ABB6C /* AmberlertsApp.swift in Sources */,
-				03154FE12760DAB4009ABB6C /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -726,7 +608,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03154FF42760DAB4009ABB6C /* Amberlerts_watchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -734,8 +615,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03154FFE2760DAB4009ABB6C /* Amberlerts_watchUITests.swift in Sources */,
-				031550002760DAB4009ABB6C /* Amberlerts_watchUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -743,8 +622,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				031550242760EA13009ABB6C /* AmberWidget.intentdefinition in Sources */,
-				0315501F2760EA12009ABB6C /* AmberWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -755,7 +632,6 @@
 				03F69B86275A42DA0093E32F /* ContentView.swift in Sources */,
 				03154FC32760C54B009ABB6C /* Prices.swift in Sources */,
 				03F69B84275A42DA0093E32F /* AmberlertsApp.swift in Sources */,
-				031550252760EA13009ABB6C /* AmberWidget.intentdefinition in Sources */,
 				03154FC02760C510009ABB6C /* Network.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -898,7 +774,6 @@
 		031550062760DAB4009ABB6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -923,7 +798,6 @@
 		031550072760DAB4009ABB6C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -978,7 +852,6 @@
 		0315500D2760DAB4009ABB6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1004,7 +877,6 @@
 		0315500E2760DAB4009ABB6C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1250,7 +1122,6 @@
 		03F69B8D275A42DA0093E32F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1281,7 +1152,6 @@
 		03F69B8E275A42DA0093E32F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
