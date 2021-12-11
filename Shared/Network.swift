@@ -12,76 +12,38 @@ class Network: ObservableObject {
 	@Published var sites: [Site] = []
     
     let apiKey = "psk_0d3d429582b0055926e21621582c4e65"
-	let baseURL = "https://api.amber.com.au/v1"
-	let currentPriceURL = "https://api.amber.com.au/v1/sites/01FNTJ84M9BZJMSGK2WW633ZS0/prices/current?next=6"
-	let sitesURL = "https://api.amber.com.au/v1/sites"
-    let headers = ["Authorization":"Bearer psk_0d3d429582b0055926e21621582c4e65"]
+	let baseURL = "https://api.amber.com.au/v1/"
     
-    func getPrices() {
-        guard let url = URL(string: currentPriceURL) else { fatalError("Missing URL") }
-        
-        var urlRequest = URLRequest(url: url)
-        urlRequest.addValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
-        
-        let dataTask = URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
-            if let error = error {
-                print("Request error: ", error)
-                return
-            }
-            guard let response = response as? HTTPURLResponse else { return }
-            
-            if response.statusCode == 200 {
-                guard let data = data else { return }
-                DispatchQueue.main.async {
-                    do {
-                        var decoder = JSONDecoder.init()
-                        decoder.dateDecodingStrategy = .iso8601
-                        let decodedPrices = try decoder.decode([Price].self, from: data)
-                        
-                        self.prices = decodedPrices
-                        print("Prices:",self.prices)
-
-                    } catch let error {
-                        print("Error decoding: ", error)
-                    }
-                }
-            }
-        }
-        
-        dataTask.resume()
-    }
+	func pricesUrl() -> URL {
+		let urlString = self.baseURL + "sites/" + self.sites[0].id + "/prices/current?next=6&previous=3"
+		return URL(string: urlString)!
+	}
 	
-	func getSites() {
-		guard let url = URL(string: sitesURL) else { fatalError("Missing URL") }
-		
-		var urlRequest = URLRequest(url: url)
+	func sitesUrl() -> URL {
+		return URL(string: "https://api.amber.com.au/v1/sites")!
+	}
+	
+	func getPrices() async throws -> [Price] {
+		var urlRequest = URLRequest(url: self.pricesUrl())
 		urlRequest.addValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
 
-		let dataTask = URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
-			if let error = error {
-				print("Request error: ", error)
-				return
-			}
-			guard let response = response as? HTTPURLResponse else { return }
-			
-			if response.statusCode == 200 {
-				guard let data = data else { return }
-				DispatchQueue.main.async {
-					do {
-						var decoder = JSONDecoder.init()
-						decoder.dateDecodingStrategy = .iso8601
-						let decodedSites = try decoder.decode([Site].self, from: data)
-						
-						self.sites = decodedSites
-						print("Prices:",self.sites)
+		let (data, response) = try await URLSession.shared.data(for: urlRequest)
+		guard (response as? HTTPURLResponse)?.statusCode == 200 else { fatalError("Error while fetching data") }
+		let decoder = JSONDecoder.init()
+		decoder.dateDecodingStrategy = .iso8601
+		let decodedPrices = try decoder.decode([Price].self, from: data)
+		return decodedPrices
+	}
+	
+	func getSites() async throws -> [Site] {
+		var urlRequest = URLRequest(url: self.sitesUrl())
+		urlRequest.addValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
 
-					} catch let error {
-						print("Error decoding: ", error)
-					}
-				}
-			}
-		}
-		
-		dataTask.resume()
+		let (data, response) = try await URLSession.shared.data(for: urlRequest)
+		guard (response as? HTTPURLResponse)?.statusCode == 200 else { fatalError("Error while fetching data") }
+		let decoder = JSONDecoder.init()
+		decoder.dateDecodingStrategy = .iso8601
+		let decodedSites = try decoder.decode([Site].self, from: data)
+		return decodedSites
 	}
 }
