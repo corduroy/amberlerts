@@ -9,7 +9,8 @@ import SwiftUI
 
 struct PriceListItem: View {
 	var price: Price
-	
+	let amberColor = Color(#colorLiteral(red: 0, green: 227/255, blue: 160/255, alpha: 1))
+
 	let currencyFormatter: NumberFormatter = {
 		let formatter = NumberFormatter()
 		formatter.numberStyle = .currency
@@ -22,10 +23,15 @@ struct PriceListItem: View {
 	}()
 	
     var body: some View {
-		HStack(alignment:.top) {
+		HStack(alignment:.center) {
+			Rectangle()
+				.fill(price.priceColorIndicator())
+				.frame(width: 5)
+				.padding(0)
 			Text(price.startTime, style: .time)
 				.foregroundColor(textColorForDate(date: price.startTime))
 				.bold()
+				.padding(.trailing,20.0)
 			VStack(alignment: .leading) {
 				Text(currencyFormatter.string(for: price.perKwh)!)
 					.bold()
@@ -44,7 +50,8 @@ struct PriceListItem: View {
 			  alignment: .topLeading
 			)
 		.padding()
-		.background(price.priceColorIndicator())
+		.background(amberColor)
+		.opacity(opacityForDate(date: price.startTime))
 		.cornerRadius(10)
     }
 }
@@ -55,6 +62,14 @@ func textColorForDate(date: Date) -> Color {
 		textColor = Color.gray
 	}
 	return textColor
+}
+
+func opacityForDate(date: Date) -> Double {
+	var opacity = 1.0
+	if date < Date() {
+		opacity = Double(0.5)
+	}
+	return opacity
 }
 
 //struct PriceListItem_Previews: PreviewProvider {

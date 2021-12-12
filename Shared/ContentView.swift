@@ -10,7 +10,6 @@ struct ContentView: View {
 	@EnvironmentObject var network: Network
 	
 	let amberColor = Color(#colorLiteral(red: 0, green: 227/255, blue: 160/255, alpha: 1))
-	
 	var body: some View {
 		NavigationView {
 			ScrollView{
@@ -26,6 +25,7 @@ struct ContentView: View {
 			.background(Color.white)
 			.padding()
 		}
+
 		.task {
 			do {
 				network.sites = try await network.getSites()

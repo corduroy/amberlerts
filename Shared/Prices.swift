@@ -37,7 +37,7 @@ struct Price:  Identifiable,Decodable {
 	func priceColorIndicator() -> Color {
 		switch self.perKwh {
 		case -100..<19.5:
-			return Color(red: 0/255, green: 220/255, blue: 0/255)
+			return Color(red: 0/255, green: 180/255, blue: 0/255)
 		case 19.5..<23:
 			return Color(red: 255/255, green: 165/255, blue: 0/255)
 		case 23..<10000:
