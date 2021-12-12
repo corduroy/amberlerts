@@ -37,11 +37,9 @@ struct ContentView: View {
 			} catch {
 				print("Error", error)
 			}
-			
 		}
 	}
 }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
