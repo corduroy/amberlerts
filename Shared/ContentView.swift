@@ -29,12 +29,12 @@ struct ContentView: View {
 			do {
 				network.sites = try await network.getSites()
 			} catch {
-				print("Error", error)
+				print("Error Getting Sites", error)
 			}
 			do {
 				network.prices = try await network.getPrices()
 			} catch {
-				print("Error", error)
+				print("Error Getting Prices", error)
 			}
 		}
 	}

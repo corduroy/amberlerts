@@ -46,7 +46,7 @@ struct PriceListItem: View {
 			  minWidth: 0,
 			  maxWidth: .infinity,
 			  minHeight: 0,
-			  maxHeight: .infinity,
+			  maxHeight: 60,
 			  alignment: .topLeading
 			)
 		.padding()
@@ -79,7 +79,7 @@ struct PriceListItem_Previews: PreviewProvider {
 								   duration: 30,
 								   startTime: Date(timeIntervalSinceNow: 4800),
 								   endTime: Date(timeIntervalSinceNow: 6600),
-								   perKwh: 22.0,
+								   perKwh: 12.0,
 								   channelType: "general",
 								   renewables: 78.9,
 								   spotPerKwh: 7.5,
