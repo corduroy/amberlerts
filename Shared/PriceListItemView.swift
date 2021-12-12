@@ -72,8 +72,17 @@ func opacityForDate(date: Date) -> Double {
 	return opacity
 }
 
-//struct PriceListItem_Previews: PreviewProvider {
-//    static var previews: some View {
-//		PriceListItem(price: )
-//    }
-//}
+struct PriceListItem_Previews: PreviewProvider {
+    static var previews: some View {
+		PriceListItem(price: Price(type: "None",
+								   date:  "2022-12-04",
+								   duration: 30,
+								   startTime: Date(timeIntervalSinceNow: 4800),
+								   endTime: Date(timeIntervalSinceNow: 6600),
+								   perKwh: 22.0,
+								   channelType: "general",
+								   renewables: 78.9,
+								   spotPerKwh: 7.5,
+								   spikeStatus: "none"))
+    }
+}
