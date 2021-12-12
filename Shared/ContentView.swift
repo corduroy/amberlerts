@@ -25,7 +25,6 @@ struct ContentView: View {
 			.background(Color.white)
 			.padding()
 		}
-
 		.task {
 			do {
 				network.sites = try await network.getSites()
