@@ -21,11 +21,8 @@ struct ContentView: View {
 		return formatter
 	}()
 	
-	let lowPriceColor = Color.green
-	let midPriceColor = Color.orange
-	let highPriceColor = Color.red
 	let amberColor = Color(#colorLiteral(red: 0, green: 227/255, blue: 160/255, alpha: 1))
-	
+
 	var body: some View {
 		NavigationView {
 			
@@ -49,6 +46,7 @@ struct ContentView: View {
 									+ Text(percentFormatter.string(from: NSNumber(value: price.renewables/100))!)
 										.foregroundColor(textColorForDate(date: price.startTime))
 								}
+//								.background(cellColorForPrice(price: price.perKwh))
 							}
 						}
 						.frame(width: 300, alignment: .leading)
@@ -97,3 +95,4 @@ func textColorForDate(date: Date) -> Color {
 	}
 	return textColor
 }
+
