@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Price:  Identifiable,Decodable {
     let id = UUID()
@@ -31,6 +32,19 @@ struct Price:  Identifiable,Decodable {
 		case renewables
 		case spotPerKwh
 		case spikeStatus
+	}
+	
+	func priceColorIndicator() -> Color {
+		switch self.perKwh {
+		case -100..<19.5:
+			return Color(red: 0/255, green: 220/255, blue: 0/255)
+		case 19.5..<23:
+			return Color(red: 255/255, green: 165/255, blue: 0/255)
+		case 23..<10000:
+			return Color(red: 245/255, green: 0/255, blue: 0/255)
+		default:
+			return Color(red: 245/255, green: 0/255, blue: 0/255)
+		}
 	}
 }
 

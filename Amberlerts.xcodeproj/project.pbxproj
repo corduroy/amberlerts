@@ -10,6 +10,7 @@
 		03154FC02760C510009ABB6C /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03154FBF2760C510009ABB6C /* Network.swift */; };
 		03154FC32760C54B009ABB6C /* Prices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03154FC22760C54B009ABB6C /* Prices.swift */; };
 		035C9B922764BC95001A45FC /* PriceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035C9B912764BC95001A45FC /* PriceDetailView.swift */; };
+		035C9B9427661398001A45FC /* PriceListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035C9B9327661398001A45FC /* PriceListItem.swift */; };
 		03F69B75275A42DA0093E32F /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F69B74275A42DA0093E32F /* Tests_iOS.swift */; };
 		03F69B77275A42DA0093E32F /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F69B76275A42DA0093E32F /* Tests_iOSLaunchTests.swift */; };
 		03F69B84275A42DA0093E32F /* AmberlertsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F69B5C275A42D80093E32F /* AmberlertsApp.swift */; };
@@ -47,6 +48,7 @@
 		0315501B2760EA12009ABB6C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		035C9B902764B8C5001A45FC /* Amberlerts--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Amberlerts--iOS--Info.plist"; sourceTree = "<group>"; };
 		035C9B912764BC95001A45FC /* PriceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceDetailView.swift; sourceTree = "<group>"; };
+		035C9B9327661398001A45FC /* PriceListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceListItem.swift; sourceTree = "<group>"; };
 		03F69B5C275A42D80093E32F /* AmberlertsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmberlertsApp.swift; sourceTree = "<group>"; };
 		03F69B5D275A42D80093E32F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		03F69B5E275A42DA0093E32F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			children = (
 				03F69B5C275A42D80093E32F /* AmberlertsApp.swift */,
 				03F69B5D275A42D80093E32F /* ContentView.swift */,
+				035C9B9327661398001A45FC /* PriceListItem.swift */,
 				03154FBF2760C510009ABB6C /* Network.swift */,
 				03154FC22760C54B009ABB6C /* Prices.swift */,
 				03F69B5E275A42DA0093E32F /* Assets.xcassets */,
@@ -239,6 +242,7 @@
 			files = (
 				035C9B922764BC95001A45FC /* PriceDetailView.swift in Sources */,
 				03F69B86275A42DA0093E32F /* ContentView.swift in Sources */,
+				035C9B9427661398001A45FC /* PriceListItem.swift in Sources */,
 				03154FC32760C54B009ABB6C /* Prices.swift in Sources */,
 				03F69B84275A42DA0093E32F /* AmberlertsApp.swift in Sources */,
 				03154FC02760C510009ABB6C /* Network.swift in Sources */,
