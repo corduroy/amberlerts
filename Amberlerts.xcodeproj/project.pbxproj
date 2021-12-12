@@ -50,6 +50,7 @@
 		035C9B912764BC95001A45FC /* PriceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceDetailView.swift; sourceTree = "<group>"; };
 		035C9B9327661398001A45FC /* PriceListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceListItemView.swift; sourceTree = "<group>"; };
 		035C9B9727662600001A45FC /* APIConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = APIConfig.xcconfig; sourceTree = "<group>"; };
+		035C9B9827662AF2001A45FC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		03F69B5C275A42D80093E32F /* AmberlertsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmberlertsApp.swift; sourceTree = "<group>"; };
 		03F69B5D275A42D80093E32F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		03F69B5E275A42DA0093E32F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -91,6 +92,7 @@
 		03F69B56275A42D80093E32F = {
 			isa = PBXGroup;
 			children = (
+				035C9B9827662AF2001A45FC /* README.md */,
 				035C9B902764B8C5001A45FC /* Amberlerts--iOS--Info.plist */,
 				03F69B5B275A42D80093E32F /* Shared */,
 				03F69B73275A42DA0093E32F /* Tests iOS */,
