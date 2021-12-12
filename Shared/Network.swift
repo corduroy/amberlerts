@@ -15,7 +15,7 @@ class Network: ObservableObject {
 	let baseURL = "https://api.amber.com.au/v1/"
     
 	func pricesUrl() -> URL {
-		let urlString = self.baseURL + "sites/" + self.sites[0].id + "/prices/current?next=6&previous=3"
+		let urlString = self.baseURL + "sites/" + self.sites[0].id + "/prices/current?next=28&previous=2"
 		return URL(string: urlString)!
 	}
 	
