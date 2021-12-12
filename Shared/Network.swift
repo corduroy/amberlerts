@@ -11,7 +11,7 @@ class Network: ObservableObject {
     @Published var prices: [Price] = []
 	@Published var sites: [Site] = []
     
-    let apiKey = "psk_0d3d429582b0055926e21621582c4e65"
+	let apiKey = Bundle.main.infoDictionary!["APIKey"] as! String
 	let baseURL = "https://api.amber.com.au/v1/"
     
 	func pricesUrl() -> URL {
