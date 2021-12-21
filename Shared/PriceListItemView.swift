@@ -13,15 +13,6 @@ struct PriceListItem: View {
 	var price: Price
 	let amberColor = Color(#colorLiteral(red: 0.1578277647, green: 0.1932222545, blue: 0.2605077624, alpha: 1))
 
-	let currencyFormatter: NumberFormatter = {
-		let formatter = NumberFormatter()
-		formatter.numberStyle = .decimal
-		formatter.maximumFractionDigits = 0
-		formatter.positiveSuffix = "c"
-		formatter.negativeSuffix = "c"
-
-		return formatter
-	}()
 	let percentFormatter: NumberFormatter = {
 		let formatter = NumberFormatter()
 		formatter.numberStyle = .percent
@@ -40,7 +31,7 @@ struct PriceListItem: View {
 				.bold()
 				.font(.system(size: 18))
 			Spacer()
-				Text(currencyFormatter.string(for: price.perKwh)!)
+				Text(price.priceString())
 					.bold()
 					.foregroundColor(textColorForDate(date: price.startTime, mode:currentMode))
 					.font(.system(size: 36))

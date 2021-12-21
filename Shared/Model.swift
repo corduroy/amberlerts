@@ -46,6 +46,22 @@ struct Price:  Identifiable,Decodable {
 			return Color(red: 245/255, green: 0/255, blue: 0/255)
 		}
 	}
+	
+	func priceString() -> String {
+		let formatter = NumberFormatter()
+		var multiplier: Double = 1
+		if self.perKwh < 100 {
+			multiplier = 1
+			formatter.numberStyle = .decimal
+			formatter.maximumFractionDigits = 0
+			formatter.positiveSuffix = "c"
+			formatter.negativeSuffix = "c"
+		}else{
+			multiplier = 1/100
+			formatter.numberStyle = .currency
+		}
+		return formatter.string(for: (multiplier*self.perKwh)) ?? "no price"
+	}
 }
 
 struct Site: Identifiable,Decodable {
