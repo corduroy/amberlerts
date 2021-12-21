@@ -46,7 +46,7 @@ struct Price:  Identifiable,Decodable {
 			return Color(red: 245/255, green: 0/255, blue: 0/255)
 		}
 	}
-	
+	// Provide a nicely-formatted string value for the price
 	func priceString() -> String {
 		let formatter = NumberFormatter()
 		var multiplier: Double = 1
