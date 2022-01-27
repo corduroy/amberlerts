@@ -19,7 +19,7 @@ struct ContentView: View {
 						PriceListItem(price: price)
 					}
 			}
-			.navigationTitle("Current Prices")
+			.navigationTitle("Amber ⚡️ Price")
 			.listStyle(.plain)
 			.listRowSeparator(.hidden)
 		}

@@ -47,6 +47,7 @@ struct Price:  Identifiable,Decodable {
 		}
 	}
 	// Provide a nicely-formatted string value for the price
+	// Prices less than a dollar shown in cents, higher prices in dollars and cents.
 	func priceString() -> String {
 		let formatter = NumberFormatter()
 		var multiplier: Double = 1

@@ -20,7 +20,8 @@ class Network: ObservableObject {
 	}
 	
 	func sitesUrl() -> URL {
-		return URL(string: "https://api.amber.com.au/v1/sites")!
+		let urlString = self.baseURL + "sites"
+		return URL(string: urlString)!
 	}
 	
 	func getPrices() async throws -> [Price] {
