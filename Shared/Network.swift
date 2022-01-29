@@ -29,7 +29,10 @@ class Network: ObservableObject {
 		urlRequest.addValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
 
 		let (data, response) = try await URLSession.shared.data(for: urlRequest)
-		guard (response as? HTTPURLResponse)?.statusCode == 200 else { fatalError("Error while fetching data") }
+		guard (response as? HTTPURLResponse)?.statusCode == 200 else {
+			fatalError("Error while fetching data")
+			//TODO: Error Handling!
+		}
 		let decoder = JSONDecoder.init()
 		decoder.dateDecodingStrategy = .iso8601
 		let decodedPrices = try decoder.decode([Price].self, from: data)
@@ -41,7 +44,10 @@ class Network: ObservableObject {
 		urlRequest.addValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
 
 		let (data, response) = try await URLSession.shared.data(for: urlRequest)
-		guard (response as? HTTPURLResponse)?.statusCode == 200 else { fatalError("Error while fetching data") }
+		guard (response as? HTTPURLResponse)?.statusCode == 200 else {
+			fatalError("Error while fetching data")
+			//TODO: Error Handling!
+		}
 		let decoder = JSONDecoder.init()
 		decoder.dateDecodingStrategy = .iso8601
 		let decodedSites = try decoder.decode([Site].self, from: data)
