@@ -4,8 +4,8 @@
 //
 //  Created by Joshua McKinnon on 26/1/2022.
 //
-
 import SwiftUI
+import ClockKit
 
 struct PriceDetailView: View {
 	@Environment(\.colorScheme) var currentMode
@@ -27,15 +27,24 @@ struct PriceDetailView: View {
 				.frame(width: 5)
 				.padding(0)
 			Text(price.startTime, style: .time)
-				.foregroundColor(textColorForDate(date: price.startTime, mode:currentMode))
+				.foregroundColor(textColorForDate(date: price.endTime, mode:currentMode))
 				.bold()
 				.font(.system(size: 18))
 			Spacer()
 			Text(price.priceString())
 				.bold()
-				.foregroundColor(textColorForDate(date: price.startTime, mode:currentMode))
+				.foregroundColor(textColorForDate(date: price.endTime, mode:currentMode))
 				.font(.system(size: 36))
 		}
+		.padding()
+//		.border(price.priceColorIndicator(),width:borderWidthForPrice(price: price))
+		.opacity(opacityForDate(date: price.endTime, mode:currentMode))
+		.overlay(
+			RoundedRectangle(cornerRadius: 5)
+				.stroke(price.priceColorIndicator(), lineWidth: borderWidthForPrice(price: price))
+				.padding(.horizontal,-8)
+		)
+
 	}
 }
 
@@ -71,9 +80,48 @@ func opacityForDate(date: Date, mode:ColorScheme) -> Double {
 	return opacity
 }
 
+func borderWidthForPrice(price: Price) -> Double {
+	if price.startTime < Date() && price.endTime > Date() {
+		return 2.0
+	} else {
+		return 0.0
+	}
+}
 
-//struct PriceDetailView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        PriceDetailView()
-//    }
+
+
+
+struct GaugeComplicationView: View {
+  @State var acidity = 5.9
+
+  var body: some View {
+	Gauge(value: acidity, in: 15...30) {
+	  Image(systemName: "drop.fill")
+		.foregroundColor(.green)
+	} currentValueLabel: {
+	  Text("\(acidity, specifier: "%.1f")")
+	} minimumValueLabel: {
+	  Text("15")
+	} maximumValueLabel: {
+	  Text("30")
+	}
+	.gaugeStyle(CircularGaugeStyle())
+  }
+}
+
+struct PriceDetailView_Previews: PreviewProvider {
+	static var previews: some View {
+		Group {
+		PriceDetailView(price: Price(type: "ForecastInterval", date: "2021-12-17", duration: 30, startTime: Date(), endTime: Date().addingTimeInterval(60*30), perKwh: 21, channelType: "General", renewables: 12.2, spotPerKwh: 8.8, spikeStatus: "none"))
+			
+			GaugeComplicationView()
+		}
+}
+}
+//struct GaugeSample_Previews: PreviewProvider {
+//	static var previews: some View {
+//		CLKComplicationTemplateGraphicCornerGaugeText
+//		(GaugeComplicationView())
+//			.previewContext()
+//	}
 //}

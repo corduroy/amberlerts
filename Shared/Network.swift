@@ -6,8 +6,13 @@
 //
 
 import SwiftUI
+import os
 
 class Network: ObservableObject {
+	let logger = Logger(subsystem:
+							"biz.corduroy.amberlerts",
+						category: "Networking")
+	
     @Published var prices: [Price] = []
 	@Published var sites: [Site] = []
     
@@ -15,7 +20,7 @@ class Network: ObservableObject {
 	let baseURL = "https://api.amber.com.au/v1/"
     
 	func pricesUrl() -> URL {
-		let urlString = self.baseURL + "sites/" + self.sites[0].id + "/prices/current?next=28&previous=2"
+		let urlString = self.baseURL + "sites/" + self.sites[0].id + "/prices/current?next=28&previous=1"
 		return URL(string: urlString)!
 	}
 	
@@ -29,9 +34,11 @@ class Network: ObservableObject {
 		urlRequest.addValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
 
 		let (data, response) = try await URLSession.shared.data(for: urlRequest)
-		guard (response as? HTTPURLResponse)?.statusCode == 200 else {
-			fatalError("Error while fetching data")
+		let httpResponse = response as! HTTPURLResponse //What is the case where this would not be of type HTTPURLResponse?
+		if (httpResponse.statusCode != 200) {
 			//TODO: Error Handling!
+			logger.critical("\(httpResponse.statusCode) code when requesting Prices")
+			fatalError("Error while fetching data")
 		}
 		let decoder = JSONDecoder.init()
 		decoder.dateDecodingStrategy = .iso8601
@@ -44,9 +51,11 @@ class Network: ObservableObject {
 		urlRequest.addValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
 
 		let (data, response) = try await URLSession.shared.data(for: urlRequest)
-		guard (response as? HTTPURLResponse)?.statusCode == 200 else {
-			fatalError("Error while fetching data")
+		let httpResponse = response as! HTTPURLResponse
+		if (httpResponse.statusCode != 200) {
 			//TODO: Error Handling!
+			logger.critical("\(httpResponse.statusCode) code when requesting Sites")
+			fatalError("Error while fetching data")
 		}
 		let decoder = JSONDecoder.init()
 		decoder.dateDecodingStrategy = .iso8601

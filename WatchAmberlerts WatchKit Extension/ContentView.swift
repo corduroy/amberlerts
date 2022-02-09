@@ -19,6 +19,7 @@ struct ContentView: View {
 					PriceDetailView(price: price)
 				}
 			}
+//			.padding()
 			.navigationTitle("⚡️ Prices")
 			.listStyle(.plain)
 		}

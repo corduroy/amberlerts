@@ -4,12 +4,14 @@
 <dict>
 	<key>APIKey</key>
 	<string>$(APIKey)</string>
+	<key>Bundle identifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionAttributes</key>
 		<dict>
 			<key>WKAppBundleIdentifier</key>
-			<string>biz.corduroy.Amberlerts.watchkitapp</string>
+			<string>biz.jjripsnorter.amberlerts.watchkitapp</string>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.watchkit</string>
