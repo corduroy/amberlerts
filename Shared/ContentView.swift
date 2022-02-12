@@ -27,8 +27,9 @@ struct ContentView: View {
 		// Update the data whenever the app comes to the foreground
 		.onChange(of: scenePhase) { phase in
 			if phase == .active {
-				network.needsRefresh = true
-				network.fetchData()
+				if (network.needsRefresh()) {
+					network.fetchData()
+				}
 			}
 		}
 		.refreshable {

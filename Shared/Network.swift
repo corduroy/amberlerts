@@ -15,8 +15,8 @@ class Network: ObservableObject {
 	
     @Published var prices: [Price] = []
 	@Published var sites: [Site] = []
-	@Published var needsRefresh: Bool = true
-	
+
+	var lastRefreshed: Date = Date(timeIntervalSince1970: 0.0)
 	let apiKey = Bundle.main.infoDictionary!["APIKey"] as! String
 	let baseURL = "https://api.amber.com.au/v1/"
     
@@ -46,7 +46,7 @@ class Network: ObservableObject {
 		let decodedPrices = try decoder.decode([Price].self, from: data)
 		DispatchQueue.main.sync {
 			self.prices = decodedPrices
-			self.needsRefresh = false
+			self.lastRefreshed = Date()
 		}
 	}
 	
@@ -79,6 +79,18 @@ class Network: ObservableObject {
 		} catch {
 			print("Error Getting Prices", error)
 		}
+	}
+	/**
+	 Provide a hint as to whether the data stored really needs updating
+	 
+	 When auto-refreshing (for example, when returning from the background), we don't need to refresh
+	 from the network if we've recently done that. Amber's prices are updated every 5 minutes,
+	 so we'll choose an interval a bit shorter than that.
+	 
+	 - Returns `true` if we should get new data.
+	 */
+	func needsRefresh() -> Bool {
+		return lastRefreshed.timeIntervalSinceNow < -60*2.5
 	}
 	
 	func fetchData() {

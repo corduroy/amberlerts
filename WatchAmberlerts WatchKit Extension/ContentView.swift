@@ -26,8 +26,9 @@ struct ContentView: View {
 		}
 		.onChange(of: scenePhase) { phase in
 			if phase == .active {
-				network.fetchData()
-				network.needsRefresh = true
+				if (network.needsRefresh()) {
+					network.fetchData()
+				}
 			}
 		}
 		.task {
