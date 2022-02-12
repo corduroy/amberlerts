@@ -14,7 +14,6 @@ struct AmberlertsApp: App {
     var body: some Scene {
         WindowGroup {
 			ContentView(network: network)
-//                .obs(network)
         }
     }
 }
