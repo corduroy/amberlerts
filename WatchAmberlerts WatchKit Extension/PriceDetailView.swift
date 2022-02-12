@@ -23,22 +23,25 @@ struct PriceDetailView: View {
 		
 		HStack(alignment:.center) {
 			Rectangle()
+			// Color-code column
 				.fill(price.priceColorIndicator())
 				.frame(width: 5)
 				.padding(0)
+			// Time Column
 			Text(price.startTime, style: .time)
 				.foregroundColor(textColorForDate(date: price.endTime, mode:currentMode))
 				.bold()
-				.font(.system(size: 18))
+				.font(.system(size: 16))
 			Spacer()
+			// The Price
 			Text(price.priceString())
 				.bold()
 				.foregroundColor(textColorForDate(date: price.endTime, mode:currentMode))
-				.font(.system(size: 36))
+				.font(.system(size: 34))
 		}
 		.padding()
-//		.border(price.priceColorIndicator(),width:borderWidthForPrice(price: price))
 		.opacity(opacityForDate(date: price.endTime, mode:currentMode))
+		// Border to highlight the current price
 		.overlay(
 			RoundedRectangle(cornerRadius: 5)
 				.stroke(price.priceColorIndicator(), lineWidth: borderWidthForPrice(price: price))
@@ -82,7 +85,7 @@ func opacityForDate(date: Date, mode:ColorScheme) -> Double {
 
 func borderWidthForPrice(price: Price) -> Double {
 	if price.startTime < Date() && price.endTime > Date() {
-		return 2.0
+		return 4.0
 	} else {
 		return 0.0
 	}

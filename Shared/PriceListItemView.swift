@@ -38,7 +38,7 @@ struct PriceListItem: View {
 			Spacer()
 			Spacer()
 			Spacer()
-				Text("♻️ \n\(renewablesValue)")
+				Text("♻️\n\(renewablesValue)")
 				.foregroundColor(textColorForDate(date: price.endTime, mode:currentMode))
 							.frame(alignment:.trailing)
 								.multilineTextAlignment(.trailing)
@@ -97,7 +97,7 @@ func opacityForDate(date: Date, mode:ColorScheme) -> Double {
 
 func borderWidthForPrice(price: Price) -> Double {
 	if price.startTime < Date() && price.endTime > Date() {
-		return 4.0
+		return 6.0
 	} else {
 		return 0.0
 	}
