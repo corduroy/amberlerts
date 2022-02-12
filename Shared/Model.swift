@@ -7,7 +7,9 @@
 
 import Foundation
 import SwiftUI
-
+/**
+ 
+ */
 struct Price:  Identifiable,Decodable {
     let id = UUID()
     var type:           String
@@ -33,7 +35,13 @@ struct Price:  Identifiable,Decodable {
 		case spotPerKwh
 		case spikeStatus
 	}
-	
+	/**
+	 Provide an appropriate indicator color for this price
+	 
+	 The color indicator is intended to convey, visually, whether this price is Low, Moderate, or High.
+	 
+	 - Returns: The appropriate color indicator for this price
+	 */
 	func priceColorIndicator() -> Color {
 		switch self.perKwh {
 		case -100..<19.5:
@@ -46,8 +54,11 @@ struct Price:  Identifiable,Decodable {
 			return Color(red: 245/255, green: 0/255, blue: 0/255)
 		}
 	}
-	// Provide a nicely-formatted string value for the price
-	// Prices less than a dollar shown in cents, higher prices in dollars and cents.
+	/** Provide a nicely-formatted string value for the price
+	 
+	 Prices less than a dollar shown in cents, higher prices in dollars and cents.
+	 */
+	
 	func priceString() -> String {
 		let formatter = NumberFormatter()
 		var multiplier: Double = 1

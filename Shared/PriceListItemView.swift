@@ -62,7 +62,13 @@ struct PriceListItem: View {
 		.cornerRadius(10)
     }
 }
-
+/**
+ Set a different text color for prices in the past
+ 
+ - Parameter date: The date for the color to apply to. Should be the end of a time block.
+ - Parameter mode: Whether the current `ColorScheme` is dark, or light mode
+ - Returns: An appropriate color for the date, taking into account the current `ColorScheme`
+ */
 func textColorForDate(date: Date, mode:ColorScheme) -> Color {
 	var textColor = Color.white
 	if date < Date() {
@@ -82,7 +88,9 @@ func textColorForDate(date: Date, mode:ColorScheme) -> Color {
 	}
 	return textColor
 }
-
+/**
+  Fade content for prices in the past
+ */
 func opacityForDate(date: Date, mode:ColorScheme) -> Double {
 	var opacity = 1.0
 	if date < Date() {
@@ -94,7 +102,9 @@ func opacityForDate(date: Date, mode:ColorScheme) -> Double {
 	}
 	return opacity
 }
-
+/**
+ Add a border around the current price cell
+ */
 func borderWidthForPrice(price: Price) -> Double {
 	if price.startTime < Date() && price.endTime > Date() {
 		return 6.0
