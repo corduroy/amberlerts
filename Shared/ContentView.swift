@@ -34,9 +34,6 @@ struct ContentView: View {
 		.refreshable {
 			network.fetchData()
 		}
-//		.task {
-//			await network.refreshData()
-//		}
 	}
 }
 
