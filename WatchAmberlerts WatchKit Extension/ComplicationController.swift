@@ -9,7 +9,7 @@ import ClockKit
 import SwiftUI
 import os
 class ComplicationController: NSObject, CLKComplicationDataSource {
-	@EnvironmentObject var network: Network
+//	@ObservedObject var network: Network
 
 	let logger = Logger(subsystem: "biz.corduroy.amberlerts.watchkitapp",
 						category: "Complication")
@@ -81,8 +81,8 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
 //			return createUtilitarianSmallFlatTemplate(forDate: date)
 //		case .utilitarianLarge:
 //			return createUtilitarianLargeTemplate(forDate: date)
-		case .circularSmall:
-			return createCircularSmallTemplate(forDate: date)
+//		case .circularSmall:
+//			return createCircularSmallTemplate(forDate: date)
 //		case .extraLarge:
 //			return createExtraLargeTemplate(forDate: date)
 //		case .graphicCorner:
@@ -102,17 +102,17 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
 	}
 	
 	// Return a circular small template.
-	private func createCircularSmallTemplate(forDate date: Date) -> CLKComplicationTemplate {
-		// Create the data providers.
-		let currentPrice = network.prices.first
-		let priceProvider = CLKSimpleTextProvider(text: "22.5" )//currentPrice?.priceString() ?? "0.0")
-		let unitProvider = CLKSimpleTextProvider(text: "c/kWh", shortText: "c")
-		let fillFraction = Float(0.5)
-		let ringStyle = CLKComplicationRingStyle.open
-		// Create the template using the providers.
-		return CLKComplicationTemplateCircularSmallStackText(line1TextProvider: priceProvider,
-															 line2TextProvider: unitProvider)
-	}
+//	private func createCircularSmallTemplate(forDate date: Date) -> CLKComplicationTemplate {
+//		// Create the data providers.
+//		let currentPrice = network.prices.first
+//		let priceProvider = CLKSimpleTextProvider(text: "22.5" )//currentPrice?.priceString() ?? "0.0")
+//		let unitProvider = CLKSimpleTextProvider(text: "c/kWh", shortText: "c")
+//		let fillFraction = Float(0.5)
+//		let ringStyle = CLKComplicationRingStyle.open
+//		// Create the template using the providers.
+//		return CLKComplicationTemplateCircularSmallStackText(line1TextProvider: priceProvider,
+//															 line2TextProvider: unitProvider)
+//	}
 
 	private func createTimelineEntry(forComplication complication: CLKComplication, date: Date) -> CLKComplicationTimelineEntry {
 		

@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-	@EnvironmentObject var network: Network
+	@ObservedObject var network: Network
 	@Environment(\.colorScheme) var currentMode
-	
+	@Environment(\.scenePhase) var scenePhase
+
 	var body: some View {
 		NavigationView {
 			List {
@@ -23,20 +24,26 @@ struct ContentView: View {
 			.navigationTitle("⚡️ Prices")
 			.listStyle(.plain)
 		}
+		.onChange(of: scenePhase) { phase in
+			if phase == .active {
+				network.fetchData()
+				network.needsRefresh = true
+			}
+		}
 		.task {
-			await network.refreshData()
+			network.fetchData()
 		}
 		.refreshable {
-			await network.refreshData()
+			network.fetchData()
 		}
 	}
 	
 	
 }
 
-struct ContentView_Previews: PreviewProvider {
-	static var previews: some View {
-		ContentView()
-	}
-	
-}
+//struct ContentView_Previews: PreviewProvider {
+//	static var previews: some View {
+//		ContentView(network: Network)
+//	}
+//	
+//}

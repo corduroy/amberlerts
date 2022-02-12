@@ -7,7 +7,7 @@
 
 import SwiftUI
 struct ContentView: View {
-	@EnvironmentObject var network: Network
+	@ObservedObject var network: Network
 	@Environment(\.colorScheme) var currentMode
 	@Environment(\.scenePhase) var scenePhase
 
@@ -28,17 +28,15 @@ struct ContentView: View {
 		.onChange(of: scenePhase) { phase in
 			if phase == .active {
 				network.needsRefresh = true
-//				DispatchQueue.main.sync {
-//					network.refreshData()
-//				}
+				network.fetchData()
 			}
 		}
 		.refreshable {
-			await network.refreshData()
+			network.fetchData()
 		}
-		.task {
-			await network.refreshData()
-		}
+//		.task {
+//			await network.refreshData()
+//		}
 	}
 }
 

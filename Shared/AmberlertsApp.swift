@@ -13,8 +13,8 @@ struct AmberlertsApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(network)
+			ContentView(network: network)
+//                .obs(network)
         }
     }
 }
