@@ -24,16 +24,10 @@ struct ContentView: View {
 			.listStyle(.plain)
 		}
 		.task {
-			do {
-				network.sites = try await network.getSites()
-			} catch {
-				print("Error Getting Sites", error)
-			}
-			do {
-				network.prices = try await network.getPrices()
-			} catch {
-				print("Error Getting Prices", error)
-			}
+			await network.refreshData()
+		}
+		.refreshable {
+			await network.refreshData()
 		}
 	}
 	
