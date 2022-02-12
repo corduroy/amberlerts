@@ -15,7 +15,8 @@ class Network: ObservableObject {
 	
     @Published var prices: [Price] = []
 	@Published var sites: [Site] = []
-    
+	@Published var needsRefresh: Bool = true
+	
 	let apiKey = Bundle.main.infoDictionary!["APIKey"] as! String
 	let baseURL = "https://api.amber.com.au/v1/"
     
@@ -29,7 +30,7 @@ class Network: ObservableObject {
 		return URL(string: urlString)!
 	}
 	
-	func getPrices() async throws -> [Price] {
+	func getPrices() async throws {
 		var urlRequest = URLRequest(url: self.pricesUrl())
 		urlRequest.addValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
 
@@ -43,10 +44,13 @@ class Network: ObservableObject {
 		let decoder = JSONDecoder.init()
 		decoder.dateDecodingStrategy = .iso8601
 		let decodedPrices = try decoder.decode([Price].self, from: data)
-		return decodedPrices
+		DispatchQueue.main.sync {
+			self.prices = decodedPrices
+			self.needsRefresh = false
+		}
 	}
 	
-	func getSites() async throws -> [Site] {
+	func getSites() async throws {
 		var urlRequest = URLRequest(url: self.sitesUrl())
 		urlRequest.addValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
 
@@ -60,6 +64,21 @@ class Network: ObservableObject {
 		let decoder = JSONDecoder.init()
 		decoder.dateDecodingStrategy = .iso8601
 		let decodedSites = try decoder.decode([Site].self, from: data)
-		return decodedSites
+		DispatchQueue.main.sync {
+			self.sites = decodedSites
+		}
 	}
+	func refreshData() async {
+		do {
+			try await self.getSites()
+		} catch {
+			print("Error Getting Sites", error)
+		}
+		do {
+			try await self.getPrices()
+		} catch {
+			print("Error Getting Prices", error)
+		}
+	}
+
 }
