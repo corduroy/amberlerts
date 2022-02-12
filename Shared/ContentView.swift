@@ -27,57 +27,27 @@ struct ContentView: View {
 		// Update the data whenever the app comes to the foreground
 		.onChange(of: scenePhase) { phase in
 			if phase == .active {
-//				refreshData()
+				network.needsRefresh = true
+//				DispatchQueue.main.sync {
+//					network.refreshData()
+//				}
 			}
 		}
 		.refreshable {
-//			await refreshData()
-			do {
-				network.sites = try await network.getSites()
-			} catch {
-				print("Error Getting Sites", error)
-			}
-			do {
-				network.prices = try await network.getPrices()
-			} catch {
-				print("Error Getting Prices", error)
-			}
-
+			await network.refreshData()
 		}
-
 		.task {
-			do {
-				network.sites = try await network.getSites()
-			} catch {
-				print("Error Getting Sites", error)
-			}
-			do {
-				network.prices = try await network.getPrices()
-			} catch {
-				print("Error Getting Prices", error)
-			}
-		}
-	}
-	func refreshData() async {
-		do {
-			network.sites = try await network.getSites()
-		} catch {
-			print("Error Getting Sites", error)
-		}
-		do {
-			network.prices = try await network.getPrices()
-		} catch {
-			print("Error Getting Prices", error)
+			await network.refreshData()
 		}
 	}
 }
 
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-            .environmentObject(Network())
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//		ContentView(network: <#Network#>)
+//            .environmentObject(Network())
+//    }
+//}
 
 
