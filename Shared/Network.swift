@@ -80,5 +80,20 @@ class Network: ObservableObject {
 			print("Error Getting Prices", error)
 		}
 	}
+	
+	func fetchData() {
+		Task.init {
+			do {
+				try await self.getSites()
+			} catch {
+				print("Error Getting Sites", error)
+			}
+			do {
+				try await self.getPrices()
+			} catch {
+				print("Error Getting Prices", error)
+			}
+		}
+	}
 
 }
