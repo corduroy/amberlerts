@@ -1,7 +1,7 @@
 # amberlerts
 SwiftUI App to interact with the Amber Electric API
 
-![App Screenshot](/Assets/Screenshots/Framed\ Shot\ 2022-02-13\ at\ 11.56.43.png)
+![App Screenshot](/Assets/Screenshots/framed_shot-2022-02-13.png)
 
 # What is Amber?
 [Amber](https://www.amber.com.au) is an Australian electricity company that retails electricity based on the current, variable wholesale electricity price. The price can be _very high_, or also _very low_. So it's useful to be always aware of how much I'm currently paying.
