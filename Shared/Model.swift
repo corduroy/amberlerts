@@ -8,7 +8,9 @@
 import Foundation
 import SwiftUI
 /**
+ Represents the price of electricity for a time interval.
  
+ - Note: See the [Amber API](https://app.amber.com.au/developers/) for more details
  */
 struct Price:  Identifiable,Decodable {
     let id = UUID()
@@ -54,11 +56,13 @@ struct Price:  Identifiable,Decodable {
 			return Color(red: 245/255, green: 0/255, blue: 0/255)
 		}
 	}
+	
 	/** Provide a nicely-formatted string value for the price
 	 
 	 Prices less than a dollar shown in cents, higher prices in dollars and cents.
+	 
+	 - Returns: A string that's appropriately formatted in either dollars or cents, depending on the magnitude of the price
 	 */
-	
 	func priceString() -> String {
 		let formatter = NumberFormatter()
 		var multiplier: Double = 1
@@ -75,7 +79,11 @@ struct Price:  Identifiable,Decodable {
 		return formatter.string(for: (multiplier*self.perKwh)) ?? "no price"
 	}
 }
-
+/**
+ Represents a Site, where the user consumes power. Corresponds to a single metered property.
+ 
+ - Note: See the [Amber API](https://app.amber.com.au/developers/) for more details
+ */
 struct Site: Identifiable,Decodable {
     var id:     String
     var nmi:    String
@@ -91,7 +99,11 @@ struct Channel:	Identifiable,Decodable {
 		case type
 	}
 }
-
+/**
+ Represents historical usage for a single time interval.
+ 
+ This is not yet exposed in the app (or collected)
+ */
 struct Usage: Identifiable,Decodable {
 	var id =	UUID()
 	var type:	String
