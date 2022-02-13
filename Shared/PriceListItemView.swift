@@ -26,11 +26,13 @@ struct PriceListItem: View {
 				.fill(price.priceColorIndicator())
 				.frame(width: 5)
 				.padding(0)
+			/* The Time Column */
 			Text(price.startTime, style: .time)
 				.foregroundColor(textColorForDate(date: price.endTime, mode:currentMode))
 				.bold()
 				.font(.system(size: 18))
 			Spacer()
+				/* The Price Column */
 				Text(price.priceString())
 					.bold()
 					.foregroundColor(textColorForDate(date: price.endTime, mode:currentMode))
@@ -118,9 +120,9 @@ struct PriceListItem_Previews: PreviewProvider {
 		PriceListItem(price: Price(type: "None",
 								   date:  "2022-12-04",
 								   duration: 30,
-								   startTime: Date(timeIntervalSinceNow: 4800),
-								   endTime: Date(timeIntervalSinceNow: 6600),
-								   perKwh: 12.0,
+								   startTime: Date(timeIntervalSinceNow: -4800),
+								   endTime: Date(timeIntervalSinceNow: 150),
+								   perKwh: 28.0,
 								   channelType: "general",
 								   renewables: 78.9,
 								   spotPerKwh: 7.5,

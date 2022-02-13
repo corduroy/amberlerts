@@ -474,13 +474,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-watch";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 99;
 				DEVELOPMENT_TEAM = 4BSW734DAJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = WatchAmberlerts_WatchKit_Extension;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = biz.jjripsnorter.amberlerts;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = biz.jjripsnorter.amberlerts.watchkitapp;
 				PRODUCT_NAME = Amberlerts;
 				SDKROOT = watchos;
@@ -499,13 +499,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-watch";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 99;
 				DEVELOPMENT_TEAM = 4BSW734DAJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = WatchAmberlerts_WatchKit_Extension;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = biz.jjripsnorter.amberlerts;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = biz.jjripsnorter.amberlerts.watchkitapp;
 				PRODUCT_NAME = Amberlerts;
 				SDKROOT = watchos;
@@ -702,7 +702,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 99;
 				DEVELOPMENT_TEAM = 4BSW734DAJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -718,7 +718,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = biz.jjripsnorter.amberlerts;
 				PRODUCT_NAME = Amberlerts;
 				SDKROOT = iphoneos;
@@ -734,7 +734,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 99;
 				DEVELOPMENT_TEAM = 4BSW734DAJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -750,7 +750,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = biz.jjripsnorter.amberlerts;
 				PRODUCT_NAME = Amberlerts;
 				SDKROOT = iphoneos;
