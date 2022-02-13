@@ -115,7 +115,16 @@ struct GaugeComplicationView: View {
 struct PriceDetailView_Previews: PreviewProvider {
 	static var previews: some View {
 		Group {
-		PriceDetailView(price: Price(type: "ForecastInterval", date: "2021-12-17", duration: 30, startTime: Date(), endTime: Date().addingTimeInterval(60*30), perKwh: 21, channelType: "General", renewables: 12.2, spotPerKwh: 8.8, spikeStatus: "none"))
+		PriceDetailView(price: Price(type: "ForecastInterval",
+									 date: "2021-12-17",
+									 duration: 30,
+									 startTime: Date(timeIntervalSinceNow: -120),
+									 endTime: Date(timeIntervalSinceNow: 800),
+									 perKwh: 29,
+									 channelType: "General",
+									 renewables: 12.2,
+									 spotPerKwh: 8.8,
+									 spikeStatus: "none"))
 			
 			GaugeComplicationView()
 		}
