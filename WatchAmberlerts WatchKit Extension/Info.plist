@@ -11,7 +11,7 @@
 		<key>NSExtensionAttributes</key>
 		<dict>
 			<key>WKAppBundleIdentifier</key>
-			<string>biz.jjripsnorter.amberlerts.watchkitapp</string>
+			<string>biz.jjripsnorter.amberprices.watchkitapp</string>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.watchkit</string>
