@@ -19,7 +19,8 @@ class Network: ObservableObject {
     /**
 	 An array of current (and recent) electricity prices for the current user
 	 */
-	@Published var prices: [Price] = []
+	@Published var generalPrices: [Price] = []
+	@Published var controlledLoadPrices: [Price] = []
 	var sites: [Site] = []
 
 	var lastRefreshed: Date = Date(timeIntervalSince1970: 0.0)
@@ -51,7 +52,8 @@ class Network: ObservableObject {
 		decoder.dateDecodingStrategy = .iso8601
 		let decodedPrices = try decoder.decode([Price].self, from: data)
 		DispatchQueue.main.sync {
-			self.prices = decodedPrices
+			self.generalPrices = decodedPrices.filter{$0.channelType == "general"}
+			self.controlledLoadPrices = decodedPrices.filter{$0.channelType == "controlledLoad"}
 			self.lastRefreshed = Date()
 		}
 	}

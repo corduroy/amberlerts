@@ -15,10 +15,10 @@ struct ContentView: View {
 	var body: some View {
 		NavigationView {
 			List {
-					let generalPrices = network.prices.filter{$0.channelType == "general"}
-					ForEach(generalPrices) { price in
+				ForEach(network.generalPrices) { price in
 						PriceListItem(price: price)
-					}
+					
+				}
 			}
 			.navigationTitle("Amber ⚡️ Price")
 			.listStyle(.plain)
