@@ -19,7 +19,7 @@ As I got started, I discovered that there's not a lot of sample code that descri
 There's no official Watch app. I wrote a Shortcut to get my current electricity price, but I wanted More. Can I get my Amber prices on my wrist? (Spoiler: yes!)
 
 ### Watch Complications, and iPhone widgets
-Wouldn't it be great to have a watch complication so I can know my current price at a glance? Or an iPhone widget? How even do you create these things? This is my tool to find out. (WIP)
+Wouldn't it be great to have a watch complication so I can know my current price at a glance? Or an iPhone widget? How even do you create these things? This app is my tool to find out. (WIP)
 
 # Required Configuration
 
@@ -32,3 +32,6 @@ Wouldn't it be great to have a watch complication so I can know my current price
 
 ### How to Configure your developer account and bundle ID
 Yeah, I've completely forgotten how to do this. Work it out. Maybe make a PR with instructions?
+
+# See something you could improve?
+I haven't written iOS code for over 5 years. I've written very little Swift before at all. I'm happy with what I've done here, but I'm aware there is a ton I don't know. I would be very grateful for any comments, suggestions, or contributions to make it better. It's important to me that this app remains as clear and simple as possible, to get the basic job done.
