@@ -71,7 +71,7 @@ struct Price:  Identifiable,Decodable {
 			formatter.numberStyle = .decimal
 			formatter.maximumFractionDigits = 0
 			formatter.positiveSuffix = "c"
-			formatter.negativeSuffix = "c"
+			formatter.negativeSuffix = formatter.positiveSuffix
 		}else{
 			multiplier = 1/100
 			formatter.numberStyle = .currency
