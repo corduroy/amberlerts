@@ -37,6 +37,16 @@ struct PriceListItem: View {
 					.bold()
 					.foregroundColor(textColorForDate(date: price.endTime, mode:currentMode))
 					.font(.system(size: 36))
+			VStack(alignment:.leading){
+				Spacer()
+				Spacer()
+				Spacer()
+				Text("/ kWh")
+					.foregroundColor(textColorForDate(date: price.endTime, mode:currentMode))
+					.font(.system(size: 11))
+				Spacer()
+			}
+
 			Spacer()
 			Spacer()
 			Spacer()
