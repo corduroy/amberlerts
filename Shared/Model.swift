@@ -78,6 +78,27 @@ struct Price:  Identifiable,Decodable {
 		}
 		return formatter.string(for: (multiplier*self.perKwh)) ?? "no price"
 	}
+	
+	func isCurrent() -> Bool {
+		if startTime < Date() && endTime > Date() {
+			return true
+		}
+		return false
+	}
+	
+	func isPast() -> Bool {
+		if endTime < Date() {
+			return true
+		}
+		return false
+	}
+	
+	func isFuture() -> Bool {
+		if startTime > Date() {
+			return true
+		}
+		return false
+	}
 }
 /**
  Represents a Site, where the user consumes power. Corresponds to a single metered property.

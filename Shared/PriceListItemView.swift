@@ -118,7 +118,7 @@ func opacityForDate(date: Date, mode:ColorScheme) -> Double {
  Add a border around the current price cell
  */
 func borderWidthForPrice(price: Price) -> Double {
-	if price.startTime < Date() && price.endTime > Date() {
+	if price.isCurrent() {
 		return 6.0
 	} else {
 		return 0.0

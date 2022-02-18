@@ -84,7 +84,7 @@ func opacityForDate(date: Date, mode:ColorScheme) -> Double {
 }
 
 func borderWidthForPrice(price: Price) -> Double {
-	if price.startTime < Date() && price.endTime > Date() {
+	if price.isCurrent() {
 		return 4.0
 	} else {
 		return 0.0
